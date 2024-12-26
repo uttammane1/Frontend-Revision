@@ -1,26 +1,12 @@
-import { useRef, useState } from 'react'
-import './App.css'
+import React from "react";
+import Counter from "./Counter";
 
-function App() {
+const App = () => {
+    return (
+        <div>
+            <Counter />
+        </div>
+    );
+};
 
-  const [count, setCount] = useState(0);
-
-  const hello = useRef(0);
-
-  return (
-       
-      // <div>
-      //   {count}
-      //   <button onClick={()=>setCount(count -1)}>-</button>
-      //   <button onClick={()=>setCount(count +1)}>+</button>
-      // </div>
-      <div>
-        <input ref={hello}/>
-        <button onClick={()=>hello.current.focus}>Click Me</button>
-
-
-      </div>
-  )
-}
-
-export default App
+export default App;
