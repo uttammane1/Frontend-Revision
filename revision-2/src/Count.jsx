@@ -9,6 +9,7 @@ const Count = () => {
 //   function decrement (){
 //     setCount(count - 1);
 //   }
+// }
 
   const increment = () =>{setCount(count + 1)};
   const decrement = () => {setCount(count - 1)};
